@@ -1,0 +1,63 @@
+//
+//  PrefixHeader.pch
+//  mainLand
+//
+//  Created by 朱志先 on 16/6/10.
+//  Copyright © 2016年 朱志先. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define equalTo(...)                     mas_equalTo(__VA_ARGS__)
+
+#define kScreenWidth ([UIScreen mainScreen].bounds.size.width)
+#define kScreenHeight ([UIScreen mainScreen].bounds.size.height)
+
+#define kFilePath(fileName,fileType) ([[NSBundle mainBundle] pathForResource:(fileName) ofType:(fileType])
+#define kFilePathWithFullName(fileName) ([[NSBundle mainBundle] pathForResource:(fileName) ofType:(nil)])
+
+#define kLandPicWidth (150)
+#define kLandheight (150)
+#define ksideButtonWidth (40)
+#define kSideButtonHeight (40)
+#define kSideButtonLableHeight (13)
+#define kSideButtonLableWidth (40)
+#define kMyLandHeight (180)
+#define kMyLandWidth (230)
+
+#define kMyAvatarImageWidth (88)
+#define kCoinIconWidth (25)
+#define kMyLandButtonWidth (100)
+#define kMyLandButtonHeight (30)
+#define kMyLandLevelIconWidth (28)
+#define kMylandLevelIconHeight (64)
+
+#define kLeftEdgeBetweenButton (15)
+#define kButtonBetweenIsland (5)
+
+#define kTopEdgebetweenButton (25)
+#define kIslandTopEdgeVerticalSpace (90)
+#define kIslandLeftEdgeHorizontalSapce (150)
+#define kIslandBottomToBottomEdge (167)
+
+#define kButtonTopEdgeVerticalSpace (15)
+#define kBoatWidth (105)
+#define kBoatHEight (70)
+
+#define kLeftEdgeBetweenBoat (19)
+#define kBottomEdgeBetweenBoat (40)
+
+#define kGetFrameX(view) (view.frame.origin.x)
+#define kGetFrameY(view) (view.frame.origin.x)
+#define kGetFrameWidth(view) (view.frame.size.width)
+#define kGetFrameHeight(view) (view.frame.size.height)
+
+#define kPrintFrame(view) (NSLog(@"x = %f, y = %f, width = %f, height = %f",kGetFrameX(view),kGetFrameY(view),kGetFrameWidth(view),kGetFrameHeight(view)))
+
+
+
+
+#endif /* PrefixHeader_pch */
